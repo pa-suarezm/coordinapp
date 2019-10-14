@@ -14,18 +14,21 @@ export default class Coordinator extends Component {
     render() {
         // Give tasks a different className when they are checked off,
         // so that we can style them nicely in CSS
-        const coordinatorClassName = classnames({
-          name: this.props.coordinator.name,
-          career: this.props.coordinator.career,
-          email: this.props.coordinator.email,
-        });
+        
     
         return (
-          <li className={coordinatorClassName}>
-            <span className="text">
-              <strong>{this.props.coordinator.name}</strong>: {this.props.coordinator.career}
-            </span>
-          </li>
+          <div>
+            <form>
+            <h1>Mi perfil</h1>
+            <h3>Nombre:</h3>
+              <input type="text" name="name" defaultValue="Juan Rodriguez"></input><br></br><br></br>
+              <h3>Correo electronico:</h3>
+              <input type="text" name="email" defaultValue="j.rodriguez@hotmail.com"></input><br></br><br></br>
+              <h3>Departamento:</h3>
+              <input type="text" name="career" defaultValue="Arte"></input><br></br><br></br>
+              <input type="submit" value="Actualizar"></input>
+            </form>
+          </div>
         );
     }
 }
