@@ -4,6 +4,8 @@ import '../../../client/main.css';
 import { withHistory } from 'react-router-dom';
 import MainContainer from './MainContainer';
 
+import Courses from "../Courses"
+
 export default class AppContainer extends Component {
     
   constructor(props){
@@ -74,7 +76,7 @@ export default class AppContainer extends Component {
             </div>
           </Col>
           <Col lg="10" md="10" sm="10" xs="10">
-          <MainContainer />
+          <Courses/>
           </Col>
         </Row>
       </Container>
