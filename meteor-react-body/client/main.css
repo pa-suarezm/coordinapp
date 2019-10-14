@@ -1,4 +1,102 @@
 body {
-  padding: 10px;
-  font-family: sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 274px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#303750+0,1d2233+100 */
+  background: #303750; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #303750 0%,
+    #1d2233 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #303750 0%,
+    #1d2233 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #303750 0%,
+    #1d2233 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303750', endColorstr='#1d2233',GradientType=0 ); /* IE6-9 */
+
+  overflow-x: hidden;
+  padding: 20px 0 0 20px;
+  text-align: center;
+}
+
+.sidenav a {
+  margin: 10px 0px 45px 0;
+  text-decoration: none;
+  font-size: 16px;
+  color: #9b9bba;
+  font-weight: bold;
+  display: block;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+#profilePicture {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin-top: 25px;
+}
+
+#profileName {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.nav-wrap {
+  text-align: left;
+}
+
+.link-wrap {
+  padding-left: 25px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.link-wrap i {
+  margin: 7px 25px 0 8px;
+}
+
+.link-wrap:hover i {
+  color: white !important;
+}
+
+.link-wrap:hover a {
+  color: white !important;
+}
+
+.material-icons.violet {
+  color: #9b9bba;
+}
+
+#logoff{
+  margin-top: 90%;
 }
