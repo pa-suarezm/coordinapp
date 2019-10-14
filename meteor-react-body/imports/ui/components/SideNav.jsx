@@ -16,21 +16,21 @@ const sideNav = props => {
         <div className="upper-links">
           <div className="link-wrap">
             <i className="material-icons violet">assignment</i>
-            <a href="">Cursos</a>
+            <a href="/Courses">Cursos</a>
           </div>
           <div className="link-wrap">
             <i className="material-icons violet">people</i>
-            <a href="">Estudiantes</a>
+            <a href="/Student">Estudiantes</a>
           </div>
           <div className="link-wrap">
             <i className="material-icons violet">assessment</i>
-            <a href="">Estimaciones</a>
+            <a href="/Estimate">Estimaciones</a>
           </div>
         </div>
         <div className="bottom-links">
           <div className="link-wrap" id="logoff">
             <i className="material-icons violet">exit_to_app</i>
-            <a href="">Salir</a>
+            <a href="/logout">Salir</a>
           </div>
         </div>
       </div>
