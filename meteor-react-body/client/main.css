@@ -3,13 +3,32 @@ body {
   color: #484d51;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-container{
+  height: 100%;
+}
+
+.nav-container{
+  width: 270px;
+}
+
 .sidenav {
   height: 100%;
   width: 270px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#303750+0,1d2233+100 */
   background: #303750; /* Old browsers */
   background: -moz-linear-gradient(
@@ -29,7 +48,6 @@ body {
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303750', endColorstr='#1d2233',GradientType=0 ); /* IE6-9 */
 
-  overflow-x: hidden;
   padding: 20px 0 0 20px;
   text-align: center;
 }
@@ -73,6 +91,10 @@ body {
 
 .nav-wrap {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
 }
 
 .link-wrap {
@@ -146,8 +168,7 @@ h5 {
 
 .wrap-background {
   padding: 0 2% 0 7%;
-  min-height: 98vh;
-  max-height: 100vh;
+  height: 100%;
 }
 
 .search-wrap{
@@ -221,5 +242,9 @@ h5 {
 
 .course-list{
   overflow-y: auto;
-  height: 80vh;
+  max-height: 100vh;
+}
+
+.course-detail-wrap{
+
 }
