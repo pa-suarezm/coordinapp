@@ -41,7 +41,7 @@ Los coordinadores de las facultades de diferentes universidades en Bogotá.
 <h4>Licencia:</h4><br>
 El código desarrollado cuenta con licencia MIT. La cual es una licencia de software libre permisivo. Esto significa que no hay restricciones, se puede usar, copiar, modificar, integrar con otro software, publicar, vender entre otras actividades.
 
-<h4>URL video de funcionalidad:<h4><br>
+<h4>URL video de funcionalidad:<h4>
   
-<h4>URL de la página corriendo en un servidor público (github.io):<h4><br>
+<h4>URL de la página corriendo en un servidor público (github.io):<h4>
 https://pa-suarezm.github.io/coordinapp
