@@ -91,6 +91,10 @@ html, body {
 
 .nav-wrap {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
 }
 
 .link-wrap {
