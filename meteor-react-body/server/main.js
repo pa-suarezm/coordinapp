@@ -1,5 +1,7 @@
 import { Meteor } from 'meteor/meteor';
+
 import Subjects from '../imports/api/subjects/subjects';
+import Coordinators from '../imports/api/coordinators/coordinators.js';
 
 Accounts.onCreateUser(function(options, user) {
     // Use provided profile in options, or create an empty profile object
