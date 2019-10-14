@@ -1,5 +1,6 @@
 body {
   font-family: "Nunito", sans-serif;
+  color:#484D51;
 }
 
 .sidenav {
@@ -106,8 +107,20 @@ body {
   padding: 20px;
 }
 
-#container-wrap-welcome{
-  background-color: red;
-  margin: 30vh;
+#welcome-container{
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 50px;
+}
+
+h1{
+  font-size: 2.5em;
+}
+
+.flex-container{
+  padding: 40px;
+  width: 70%;
 }

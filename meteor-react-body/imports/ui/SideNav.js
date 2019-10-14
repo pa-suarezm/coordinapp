@@ -9,7 +9,7 @@ const sideNav = (props) => {
     return(
         <Container fluid="true">
         <Row>
-          <Col lg="2" md="10" sm="10" xs="10">
+          <Col lg="2" md="2" sm="2" xs="2">
             <div className="sidenav">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj7EjGF_qmL4nqmkWPRcXqTGyTZFhteHPpUrALAlPIDWWwIQLn-Q"
@@ -39,7 +39,7 @@ const sideNav = (props) => {
               </div>
             </div>
           </Col>
-          <Col lg="10" md="2" sm="2" xs="2">
+          <Col lg="10" md="10" sm="10" xs="10">
             <Welcome />
           </Col>
         </Row>
