@@ -38,7 +38,7 @@ Los coordinadores de las facultades de diferentes universidades en Bogotá.
 </ol> 
 
 # Otros
-<h4>Licencia:</h4><br>
+<h4>Licencia:</h4>
 El código desarrollado cuenta con licencia MIT. La cual es una licencia de software libre permisivo. Esto significa que no hay restricciones, se puede usar, copiar, modificar, integrar con otro software, publicar, vender entre otras actividades.
 
 <h4>URL video de funcionalidad:<h4>
