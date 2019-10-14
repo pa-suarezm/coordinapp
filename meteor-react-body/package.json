@@ -14,19 +14,17 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.4",
-    "jquery": "^3.4.1",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
     "simpl-schema": "^1.5.6"
   },
   "meteor": {
     "mainModule": {
       "client": "client/main.js",
       "server": "server/main.js"
-    },
-    "testModule": "tests/main.js"
+    }
   },
   "devDependencies": {
     "@meteorjs/eslint-config-meteor": "^1.0.5",
