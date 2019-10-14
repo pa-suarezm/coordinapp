@@ -76,7 +76,7 @@ export default class AppContainer extends Component {
             </div>
           </Col>
           <Col lg="10" md="10" sm="10" xs="10">
-          <Courses/>
+            <Courses/>
           </Col>
         </Row>
       </Container>
