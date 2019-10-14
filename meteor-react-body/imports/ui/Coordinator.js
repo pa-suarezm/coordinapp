@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Meteor } from 'meteor/meteor';
 import classnames from 'classnames';
 
-import { Coordinators } from '../api/coordinators.js';
-
 // Task component - represents a single todo item
 export default class Coordinator extends Component {
 

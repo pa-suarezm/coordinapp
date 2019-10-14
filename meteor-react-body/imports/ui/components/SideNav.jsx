@@ -1,8 +1,10 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import "../../client/main.css";
+import '../../../client/main.css'
 
-import Cursos from "./Courses";
+import Welcome from "../Welcome"
+
+import Cursos from "../Courses";
 
 const sideNav = props => {
   return (
