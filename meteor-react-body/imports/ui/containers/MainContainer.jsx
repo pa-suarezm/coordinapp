@@ -4,11 +4,11 @@ import { Col } from "react-bootstrap";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 //Components
-import coordinator from "../Coordinator";
-import Student from "../Student";
-import Estimate from "../Estimate";
-import Courses from "../Courses";
-import CourseDetail from "../CourseDetail";
+import coordinator from "../components/Coordinator";
+import Student from "../components/Student";
+import Estimate from "../components/Estimate";
+import Courses from "../components/Courses";
+import CourseDetail from "../components/CourseDetail";
 
 export default class MainContainer extends Component {
 
