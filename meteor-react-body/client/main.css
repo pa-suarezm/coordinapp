@@ -336,13 +336,13 @@ h6 {
   font-size: 24px;
 }
 
-#card-data{
+#card-data {
   font-size: 68px;
   margin: 2px 40px 0 60px;
   font-weight: 600;
 }
 
-.line-chart{
+.line-chart {
   margin-top: 40px;
   padding: 20px 20px 20px 30px;
   background-color: white;
@@ -350,4 +350,45 @@ h6 {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.logo-wrap {
+  margin-top: 20%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#logo {
+  max-width: 90%;
+}
+
+#logo-title {
+  font-size: 55px;
+}
+
+#logo-description {
+  font-size: 26px;
+}
+
+.login-wrap {
+  margin-top: 40%;
+  text-align: left;
+  padding: 0 15px;
+  text-align: center;
+  width: 80%;
+}
+
+.text-center {
+  margin-left: 10px;
+}
+
+#login-button{
+  background-color:#6384ec;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 30px;
+  margin-top: 15px;
 }
