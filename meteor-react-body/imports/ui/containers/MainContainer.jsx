@@ -67,7 +67,6 @@ export default class MainContainer extends Component {
             </div>
           </div>
           <div className="whole-background">
-            <Courses />
             <Route path="/Coordinator" component={coordinator} />
             <Route path="/Estimate" component={Estimate} />
             <Route path="/Student" component={Student} />
