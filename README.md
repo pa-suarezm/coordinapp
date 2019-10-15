@@ -24,7 +24,7 @@ Los coordinadores de las facultades de diferentes universidades en Bogotá.
 <h4>Instrucciones de descarga y compilación:</h4>
 <ol>
   <li>Clonar el repositorio <a href="https://github.com/pa-suarezm/coordinapp">aqui</a></li>
-  <li>Instalar dependencias ejecutando en consola y/o terminal el comando meteor nmp install --save react react-dom react-router-dom react-bootstrap</li>
+  <li>Instalar dependencias ejecutando en consola y/o terminal el comando meteor nmp install --save react react-dom react-router-dom react-bootstrap react-chartjs-2</li>
   <li>Ejecutar el proyecto ejecutando el comando "meteor" en la terminal y/o consola de comandos</li>
   <li>Abrir en un navegador la dirección localhost:3000</li>
 </ol>
