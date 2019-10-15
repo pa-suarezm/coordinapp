@@ -24,7 +24,7 @@ export const renderRoutes = () => (
   <div className="app-container">
     <SideNav />
     <Router>
-      <div>
+      <div className="whole-background">
         <Route path="/login" component={LoginPage} />
         <Route path="/signup" component={SignupPage} />
         <Route path="/Coordinator" component={coordinator} exact />
