@@ -15,18 +15,23 @@ Estas soluciones no están pensadas para el contexto universitario donde el tama
 <h4>Solución:</h4>
 Una aplicación para el análisis y proyección de estadísticas, a partir de información histórica, tales como estimado de nuevos estudiantes para el siguiente semestre, estimado de demanda de cursos y estadísticas del comportamiento poblacional (Ej. retiros, incompletos) en una población estudiantil universitaria, de tal manera que los estimados y/o gráficas sean un apoyo de toma de decisiones para los administrativos de la organización, específicamente para los coordinadores.<br>
 
-<h4>Clientes objetivos:</h4><br>
+<h4>Clientes objetivos:</h4>
 Los coordinadores de las facultades de diferentes universidades en Bogotá.
+
 # Instrucciones
-<h4>Instrucciones de descarga y compilación:</h4><br>
-1. Clonar el repositorio <a href="https://github.com/pa-suarezm/coordinapp">aqui</a>
-2. Instalar dependencias ejecutando en consola y/o terminal el comando meteor nmp install --save react react-dom react-router-dom react-bootstrap
-3. Ejecutar el proyecto ejecutando el comando "meteor" en la terminal y/o consola de comandos
-4. Abrir en un navegador la dirección localhost:3000
+<h4>Instrucciones de descarga y compilación:</h4>
+<ol>
+  <li>Clonar el repositorio <a href="https://github.com/pa-suarezm/coordinapp">aqui</a></li>
+  <li>Instalar dependencias ejecutando en consola y/o terminal el comando meteor nmp install --save react react-dom react-router-dom react-bootstrap</li>
+  <li>Ejecutar el proyecto ejecutando el comando "meteor" en la terminal y/o consola de comandos</li>
+  <li>Abrir en un navegador la dirección localhost:3000</li>
+</ol>
 
 <h4>Instrucciones de uso:</h4><br>
-1. Para usar la aplicación, el usuario debe registrarse y posteriormente loguearse, el proceso de registro solo se debe hacer la primera vez.
-2. Una vez logueado el usuario podra acceder a los diferentes servicios por medio del menu en la parte derecha de la pantalla.
+<ol>
+  <li>Para usar la aplicación, el usuario debe registrarse y posteriormente loguearse, el proceso de registro solo se debe hacer la primera vez.</li>
+  <li>Una vez logueado el usuario podra acceder a los diferentes servicios por medio del menu en la parte derecha de la pantalla.</li>
+</ol> 
 
 # Sobre el proyecto
 <h4>Integrantes:</h4><br>
