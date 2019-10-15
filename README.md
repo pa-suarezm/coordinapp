@@ -46,7 +46,7 @@ Los coordinadores de las facultades de diferentes universidades en Bogotá.
 
 # Otros
 <h4>Licencia:</h4>
-El código desarrollado cuenta con licencia MIT. La cual es una licencia de software libre permisivo. Esto significa que no hay restricciones, se puede usar, copiar, modificar, integrar con otro software, publicar, vender entre otras actividades.
+El código desarrollado cuenta con licencia MIT. La cual es una licencia de software libre permisivo. Es decir, con requisitos mínimos sobre cómo se puede redistribuir el software, esto es cómo se puede usar, copiar, modificar, reutilizar, integrar con otro software, publicar, vender entre otras actividades.
 
 <h4>Tecnologias usadas:</h4>
 El proyecto se lleva a cabo usando frameworks como Meteor y react. Así mismo se utilizaron lenguajes de programacion como javaScript.
