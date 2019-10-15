@@ -37,7 +37,7 @@ export default class SignupPage extends Component {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="text-center">Sign up</h1>
+              <h1 className="text-center">Registro</h1>
             </div>
             <div className="modal-body">
               { error.length > 0 ?

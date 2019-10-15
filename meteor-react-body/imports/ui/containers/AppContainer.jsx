@@ -1,16 +1,15 @@
 import React, { Component } from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "../../../client/main.css";
-import { withHistory } from "react-router-dom";
-import MainContainer from "./MainContainer";
+//import { withHistory } from "react-router-dom";
+import MainContainer from "../containers/MainContainer";
 
-import Courses from "../Courses";
 
 export default class AppContainer extends Component {
+
   constructor(props) {
     super(props);
     this.state = this.getMeteorData();
-    this.logout = this.logout.bind(this);
   }
 
   getMeteorData() {
@@ -29,20 +28,10 @@ export default class AppContainer extends Component {
     }
   }
 
-  logout(e) {
-    e.preventDefault();
-    Meteor.logout(err => {
-      if (err) {
-        console.log(err.reason);
-      } else {
-        this.props.history.push("/login");
-      }
-    });
-  }
-
   render() {
     return (
-      <div>
+      <div className="app-container">
+        <MainContainer/>
       </div>
     );
   }

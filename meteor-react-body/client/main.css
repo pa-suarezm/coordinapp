@@ -28,7 +28,7 @@ html, body {
 
 .sidenav {
   height: 100%;
-  width: 270px;
+  max-width: 285px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#303750+0,1d2233+100 */
   background: #303750; /* Old browsers */
   background: -moz-linear-gradient(

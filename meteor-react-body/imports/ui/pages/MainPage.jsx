@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { withHistory, Link } from 'react-router-dom';
+import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
-export default class MainPage extends Component {
+class MainPage extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -16,16 +18,22 @@ export default class MainPage extends Component {
     let loggedIn = (currentUser && userDataAvailable);
     return (
       <div>
-        <div className="container">
           <h1 className="text-center">
             { loggedIn ? 'Welcome '+currentUser.username : '' }
           </h1>
-        </div>
       </div>
     );
   }
 }
 
 MainPage.propTypes = {
-  username: PropTypes.string
+    username: PropTypes.string
 }
+
+export default withTracker( () => {
+  const currentUser = Meteor.user();
+  return {
+    currentUser,
+  };
+})(MainPage);
+
