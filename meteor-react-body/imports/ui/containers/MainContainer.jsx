@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "../../../client/main.css";
 import { Col } from "react-bootstrap";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { withHistory } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 
 //Components
 import coordinator from "../components/Coordinator";
@@ -12,20 +13,10 @@ import CourseDetail from "../components/CourseDetail";
 import Welcome from "../components/Welcome"
 
 export default class MainContainer extends Component {
+
   constructor(props) {
     super(props);
-    this.logout = this.logout.bind(this);
-  }
-
-  logout(e) {
-    e.preventDefault();
-    Meteor.logout(err => {
-      if (err) {
-        console.log(err.reason);
-      } else {
-        this.props.history.push("/login");
-      }
-    });
+    this.logout = this.props.logout;
   }
 
   render() {
@@ -68,12 +59,14 @@ export default class MainContainer extends Component {
             </div>
           </div>
           <div className="whole-background">
-            <Route path="/Coordinator" component={coordinator} />
-            <Route path="/Estimate" component={Estimate} />
-            <Route path="/Student" component={Student} />
-            <Route path="/Courses" component={Courses} />
-            <Route path="/Courses/:id" component={CourseDetail}/>
-            <Route path="/" component={Welcome} />
+          <Switch>
+            <Route path="/Coordinator" component={coordinator} exact/>
+            <Route path="/Estimate" component={Estimate} exact/>
+            <Route path="/Student" component={Student} exact/>
+            <Route path="/Courses" component={Courses} exact/>
+            <Route path="/Courses/:id" component={CourseDetail} exact/>
+            <Route path="/" component={Welcome} exact/>
+          </Switch>
           </div>
         </div>
       </Router>
