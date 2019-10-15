@@ -9,6 +9,7 @@ import Student from "../components/Student";
 import Estimate from "../components/Estimate";
 import Courses from "../components/Courses";
 import CourseDetail from "../components/CourseDetail";
+import Welcome from "../components/Welcome"
 
 export default class MainContainer extends Component {
   constructor(props) {
@@ -71,7 +72,8 @@ export default class MainContainer extends Component {
             <Route path="/Estimate" component={Estimate} />
             <Route path="/Student" component={Student} />
             <Route path="/Courses" component={Courses} />
-            <Route path="/Courses/:id" component={CourseDetail} />
+            <Route path="/Courses/:id" component={CourseDetail}/>
+            <Route path="/" component={Welcome} />
           </div>
         </div>
       </Router>

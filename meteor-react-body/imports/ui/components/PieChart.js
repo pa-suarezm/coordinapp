@@ -21,7 +21,7 @@ export default class Chart extends Component{
                     labels: this.state.labels,
                     datasets: this.state.datasets
                 }}
-                height='300px'
+                height={300}
                 />
             </div>
         )
