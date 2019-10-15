@@ -1,4 +1,9 @@
 import { Meteor } from 'meteor/meteor';
+import '../imports/api/courses.js';
+
+// Meteor.courses.allow({
+
+// });
 
 Meteor.users.allow({
     update: function(userId, user) {
@@ -51,7 +56,11 @@ Meteor.startup(() => {
     } else {
         return this.ready();
     }
-});
+  });
+  
+  Meteor.publish('courses', function tasksPublication() {
+    return Courses.find({owner: this.userId });
+  });
 
 });
 
