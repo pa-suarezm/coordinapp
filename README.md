@@ -54,3 +54,6 @@ El proyecto se lleva a cabo usando frameworks como Meteor y react. Así mismo se
   
 <h4>URL de la página corriendo en un servidor público (github.io):<h4>
 https://pa-suarezm.github.io/coordinapp
+
+<h4>URL presentación:<h4>
+https://docs.google.com/presentation/d/1gi9KGvMnjREn6l83n_ROjvaw6KHE_OFES34yWURlFTY/edit?usp=sharing
