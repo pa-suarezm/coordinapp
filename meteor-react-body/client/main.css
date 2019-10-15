@@ -246,6 +246,7 @@ h6{
   flex: 1 100%;
   padding-left: 20px;
   max-height: 100%;
+  overflow-y: auto;
 }
 
 *:focus {
@@ -278,13 +279,25 @@ h6{
 }
 
 .course-detail-wrap{
-  padding: 0 20px 0 20px;
+  padding: 0 30px 0 20px;
+}
+
+.wrap-all-data{
+  width: 90%;
 }
 
 .wrap-data{
   margin-top: 25px;
   display: flex;
-  align-items: space-between;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wrap-chart{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 #data-text{
@@ -293,11 +306,10 @@ h6{
 
 #data{
   font-size: 68px;
-  margin: 0;
-  margin: 10px 40px 0 40px;
-  justify-content: center;
+  margin: 10px 40px 0 60px;
 }
 
 #aproved{
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
