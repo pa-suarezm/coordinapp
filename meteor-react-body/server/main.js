@@ -1,7 +1,16 @@
 import { Meteor } from 'meteor/meteor';
 
-import Subjects from '../imports/api/subjects/subjects';
-import Coordinators from '../imports/api/coordinators/coordinators.js';
+Meteor.users.allow({
+    update: function(userId, user) {
+      return true; 
+  
+      /**
+       * Don't use `return true` in production!
+       * You probably need something like this:
+       * return Meteor.users.findOne(userId).profile.isAdmin;
+       */
+    }
+  });
 
 Accounts.onCreateUser(function(options, user) {
     // Use provided profile in options, or create an empty profile object
