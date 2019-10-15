@@ -34,10 +34,11 @@ Meteor.methods({
     check(coordinator_id, String);
     Coordinators.remove(coordinator_id);
   },
-  'coordinators.update'(coordinator_id, nameB, emailB) {
+  'coordinators.update'(coordinator_id, nameB, careerB, emailB) {
     check(nameB, String);
+    check(careerB, String);
     check(emailB, String);
 
-    Coordinators.update(coordinator_id, { $set: { name: nameB, email: emailB} });
+    Coordinators.update(coordinator_id, { $set: { name: nameB, career: careerB, email: emailB} });
   },
 });
