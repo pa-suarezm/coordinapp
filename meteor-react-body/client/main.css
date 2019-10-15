@@ -4,18 +4,19 @@ body {
 }
 
 html, body {
-  height: 100%;
+  max-height: 100%;
   margin: 0;
 }
 
 .app-container{
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+  max-height: 100%;
+  /* left: 0;
+  top: 0; */
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .content-container{
@@ -27,8 +28,8 @@ html, body {
 }
 
 .sidenav {
-  height: 100%;
-  max-width: 285px;
+  width: 270px;
+  max-height: 100%;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#303750+0,1d2233+100 */
   background: #303750; /* Old browsers */
   background: -moz-linear-gradient(
@@ -48,12 +49,12 @@ html, body {
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303750', endColorstr='#1d2233',GradientType=0 ); /* IE6-9 */
 
-  padding: 20px 0 0 20px;
+  padding: 20px 0px 0 20px;
   text-align: center;
 }
 
 .sidenav a {
-  margin: 10px 0px 45px 0;
+  margin: 10px 0px 45px 0px;
   text-decoration: none;
   font-size: 16px;
   color: #9b9bba;
@@ -99,6 +100,7 @@ html, body {
 
 .link-wrap {
   padding-left: 25px;
+  margin-right: 40px;
   display: flex;
   flex-direction: row;
   cursor: pointer;
@@ -142,8 +144,14 @@ h1 {
   font-size: 40px;
 }
 
+h2{
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
 h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   margin: 0 0 4px 0;
 }
@@ -161,18 +169,21 @@ h5 {
   color:#9b9bba;
 }
 
+h6{
+  color:#6384EC;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px 0 15px 0;
+}
+
 .flex-container {
   padding: 40px;
   width: 70%;
 }
 
-.wrap-background {
-  padding: 0 2% 0 7%;
-  height: 100%;
-}
-
 .search-wrap{
   display: flex;
+  flex-flow: row wrap;
   flex-direction: row;
   border-bottom: 1px solid #9b9bba;
   padding-bottom: 5px;
@@ -211,10 +222,30 @@ h5 {
   color: #9b9bba;
 }
 
-.col-md-5,
-.col-lg-5,
-.col-xl-5 {
+.wrap-background{
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.whole-background{
+  height: 100vh;
+}
+
+.course-wrap{
   background-color: #f4f7fc;
+  padding: 0 40px;
+  max-width: 45%;
+  flex: 1 100%;
+  overflow-y:hidden;
+  height: 100%;
+}
+
+.course-detail{
+  flex: 1 100%;
+  padding-left: 20px;
+  max-height: 100%;
 }
 
 *:focus {
@@ -228,6 +259,7 @@ h5 {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
   margin: 10px 0;
   padding: 12px 15px 12px 20px;
+  border-radius: 5px;
 }
 
 .course-card-selected{
@@ -242,9 +274,30 @@ h5 {
 
 .course-list{
   overflow-y: auto;
-  max-height: 100vh;
+  height: 80vh;
 }
 
 .course-detail-wrap{
+  padding: 0 20px 0 20px;
+}
 
+.wrap-data{
+  margin-top: 25px;
+  display: flex;
+  align-items: space-between;
+}
+
+#data-text{
+  width: 45%;
+}
+
+#data{
+  font-size: 68px;
+  margin: 0;
+  margin: 10px 40px 0 40px;
+  justify-content: center;
+}
+
+#aproved{
+  margin-top: 20px;
 }
