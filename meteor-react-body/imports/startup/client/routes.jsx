@@ -11,11 +11,11 @@ import SignupPage from "../../ui/pages/SignUpPage";
 import LoginPage from "../../ui/pages/LoginPage";
 
 //Components
-import coordinator from "../../ui/Coordinator";
-import student from "../../ui/Student";
-import estimate from "../../ui/Estimate";
-import courses from "../../ui/Courses";
-import courseDetail from "../../ui/CourseDetail";
+import coordinator from "../../ui/components/Coordinator";
+import student from "../../ui/components/Student";
+import estimate from "../../ui/components/Estimate";
+import courses from "../../ui/components/Courses";
+import courseDetail from "../../ui/components/CourseDetail";
 
 //Static sidenav
 import SideNav from "../../ui/components/SideNav";

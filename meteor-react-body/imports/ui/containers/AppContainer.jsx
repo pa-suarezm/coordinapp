@@ -4,7 +4,7 @@ import "../../../client/main.css";
 import { withHistory } from "react-router-dom";
 import MainContainer from "./MainContainer";
 
-import Courses from "../Courses";
+import Courses from "../components/Courses";
 
 export default class AppContainer extends Component {
   constructor(props) {

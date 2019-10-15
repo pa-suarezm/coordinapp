@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import "../../client/main.css";
+import "../../../client/main.css";
 const student = props => {
   const style = {
     textAlign: "center"

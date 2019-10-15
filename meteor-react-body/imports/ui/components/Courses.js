@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import "../../client/main.css";
+import "../../../client/main.css";
 
-import Course from "./Course.js";
+import Course from "./Course";
 import CourseDetail from "./CourseDetail";
 
 const handleInputChange = () => {};

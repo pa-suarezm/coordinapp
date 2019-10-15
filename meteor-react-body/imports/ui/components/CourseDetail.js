@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import "../../client/main.css";
+import "../../../client/main.css";
+
+import PieChart from './PieChart';
 
 const courseDetail = props => {
   const style = {
@@ -31,6 +32,9 @@ const courseDetail = props => {
         </div>
         <div id="data">3.82</div>
       </div>
+      <h3 id="aproved">Aprobación</h3>
+      <p>Porcentaje de estudiantes que aprobaron o no la nota final del curso</p>
+      <PieChart />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../client/main.css";
+import "../../../client/main.css";
 
 const welcome = props => {
   const style = {
