@@ -17,10 +17,12 @@ class MainPage extends Component {
     let userDataAvailable = (currentUser !== undefined);
     let loggedIn = (currentUser && userDataAvailable);
     return (
-      <div>
-          <h1 className="text-center">
-            { loggedIn ? 'Welcome '+currentUser.username : '' }
-          </h1>
+      <div className="container">
+          <h2 className="text-center">
+            { loggedIn ? 'Coordinador: ' + currentUser.username + ' - ' + currentUser.profile.career: '' }
+          </h2>
+          <h3>Para visualizar las funciones de la aplicación navegua a través del menú lateral.</h3>
+          <hr></hr>
       </div>
     );
   }

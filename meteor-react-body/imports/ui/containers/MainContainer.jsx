@@ -1,46 +1,43 @@
 import React, { Component } from "react";
 import "../../../client/main.css";
 import { Col } from "react-bootstrap";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { withHistory } from "react-router-dom";
+import { withTracker } from 'meteor/react-meteor-data';
+import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 
 //Components
-import coordinator from "../components/Coordinator";
+import Coordinator from "../components/Coordinator";
 import Student from "../components/Student";
 import Estimate from "../components/Estimate";
 import Courses from "../components/Courses";
 import CourseDetail from "../components/CourseDetail";
 import Welcome from "../components/Welcome"
 
-export default class MainContainer extends Component {
+class MainContainer extends Component {
+
   constructor(props) {
     super(props);
-    this.logout = this.logout.bind(this);
-  }
-
-  logout(e) {
-    e.preventDefault();
-    Meteor.logout(err => {
-      if (err) {
-        console.log(err.reason);
-      } else {
-        this.props.history.push("/login");
-      }
-    });
+    this.state = { username: '' };
+    this.logout = this.props.logout;
   }
 
   render() {
+    let currentUser = this.props.currentUser;
+    let userDataAvailable = (currentUser !== undefined);
+    let loggedIn = (currentUser && userDataAvailable);
+
     return (
       <Router>
         <div className="app-container">
           <div className="sidenav">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj7EjGF_qmL4nqmkWPRcXqTGyTZFhteHPpUrALAlPIDWWwIQLn-Q"
+              src={loggedIn ? currentUser.profile.profPicture : ''}
               alt="Foto de perfil"
               id="profilePicture"
             />
-            <a href="" id="profileName">
-              Peppa Pig
-            </a>
+            <NavLink to="/Coordinator">
+              { loggedIn ? 'Coordinador ' + currentUser.username : ''} 
+            </NavLink>
             <div className="nav-wrap">
               <div className="upper-links">
                 <div className="link-wrap">
@@ -68,15 +65,24 @@ export default class MainContainer extends Component {
             </div>
           </div>
           <div className="whole-background">
-            <Route path="/Coordinator" component={coordinator} />
-            <Route path="/Estimate" component={Estimate} />
-            <Route path="/Student" component={Student} />
-            <Route path="/Courses" component={Courses} />
-            <Route path="/Courses/:id" component={CourseDetail}/>
-            <Route path="/" component={Welcome} />
+          <Switch>
+            <Route path="/Coordinator" component={Coordinator} exact/>
+            <Route path="/Estimate" component={Estimate} exact/>
+            <Route path="/Student" component={Student} exact/>
+            <Route path="/Courses" component={Courses} exact/>
+            <Route path="/Courses/:id" component={CourseDetail} exact/>
+            <Route path="/" component={Welcome} exact/>
+          </Switch>
           </div>
         </div>
       </Router>
     );
   }
 }
+
+export default withTracker( () => {
+  const currentUser = Meteor.user();
+  return {
+    currentUser,
+  };
+})(MainContainer);

@@ -12,24 +12,32 @@ Actualmente el análisis poblacional y su comportamiento para una y/o muchas gen
 
 <h4>Valor agregado:</h4>
 Estas soluciones no están pensadas para el contexto universitario donde el tamaño de la población tiende a no ser tan grande. Más aún, estas soluciones están limitadas a análisis poblacionales basados en geografía y regiones particulares; no permiten entender la población universitaria ni qué implica esa población para la universidad como organización.<br>
+
 <h4>Solución:</h4>
 Una aplicación para el análisis y proyección de estadísticas, a partir de información histórica, tales como estimado de nuevos estudiantes para el siguiente semestre, estimado de demanda de cursos y estadísticas del comportamiento poblacional (Ej. retiros, incompletos) en una población estudiantil universitaria, de tal manera que los estimados y/o gráficas sean un apoyo de toma de decisiones para los administrativos de la organización, específicamente para los coordinadores.<br>
-
-<h4>Clientes objetivos:</h4><br>
+<h4>URL video de funcionalidad:<h4>
+  
+<h4>Clientes objetivos:</h4>
 Los coordinadores de las facultades de diferentes universidades en Bogotá.
-# Instrucciones
-<h4>Instrucciones de descarga y compilación:</h4><br>
-1. Clonar el repositorio <a href="https://github.com/pa-suarezm/coordinapp">aqui</a>
-2. Instalar dependencias ejecutando en consola y/o terminal el comando meteor nmp install --save react react-dom react-router-dom react-bootstrap
-3. Ejecutar el proyecto ejecutando el comando "meteor" en la terminal y/o consola de comandos
-4. Abrir en un navegador la dirección localhost:3000
 
-<h4>Instrucciones de uso:</h4><br>
-1. Para usar la aplicación, el usuario debe registrarse y posteriormente loguearse, el proceso de registro solo se debe hacer la primera vez.
-2. Una vez logueado el usuario podra acceder a los diferentes servicios por medio del menu en la parte derecha de la pantalla.
+# Instrucciones
+<h4>Instrucciones de descarga y compilación:</h4>
+<ol>
+  <li>Clonar el repositorio <a href="https://github.com/pa-suarezm/coordinapp">aqui</a></li>
+  <li>Instalar dependencias ejecutando en consola y/o terminal el comando meteor nmp install --save react react-dom react-router-dom react-bootstrap react-chartjs-2</li>
+  <li>Ejecutar el proyecto ejecutando el comando "meteor" en la terminal y/o consola de comandos</li>
+  <li>Abrir en un navegador la dirección localhost:3000</li>
+</ol>
+
+<h4>Instrucciones de uso:</h4>
+<ol>
+  <li>Para usar la aplicación, ingrese en el siguiente link: https://pa-suarezm.github.io/coordinapp</li>
+  <li>Para usar la aplicación, el usuario debe registrarse y posteriormente loguearse, el proceso de registro solo se debe hacer la primera vez.</li>
+  <li>Una vez logueado el usuario podra acceder a los diferentes servicios por medio del menu en la parte derecha de la pantalla.</li>
+</ol> 
 
 # Sobre el proyecto
-<h4>Integrantes:</h4><br>
+<h4>Integrantes:</h4>
 <ol>
   <li>Ivan Garcia</li>
   <li>Juliana Prieto</li>
@@ -39,7 +47,7 @@ Los coordinadores de las facultades de diferentes universidades en Bogotá.
 
 # Otros
 <h4>Licencia:</h4>
-El código desarrollado cuenta con licencia MIT. La cual es una licencia de software libre permisivo. Esto significa que no hay restricciones, se puede usar, copiar, modificar, integrar con otro software, publicar, vender entre otras actividades.
+El código desarrollado cuenta con licencia MIT. La cual es una licencia de software libre permisivo. Es decir, con requisitos mínimos sobre cómo se puede redistribuir el software, esto es cómo se puede usar, copiar, modificar, reutilizar, integrar con otro software, publicar, vender entre otras actividades.
 
 <h4>Tecnologias usadas:</h4>
 El proyecto se lleva a cabo usando frameworks como Meteor y react. Así mismo se utilizaron lenguajes de programacion como javaScript.
@@ -47,3 +55,6 @@ El proyecto se lleva a cabo usando frameworks como Meteor y react. Así mismo se
   
 <h4>URL de la página corriendo en un servidor público (github.io):<h4>
 https://pa-suarezm.github.io/coordinapp
+
+<h4>URL presentación:<h4>
+https://docs.google.com/presentation/d/1gi9KGvMnjREn6l83n_ROjvaw6KHE_OFES34yWURlFTY/edit?usp=sharing
