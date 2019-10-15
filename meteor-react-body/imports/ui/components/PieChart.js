@@ -8,7 +8,8 @@ export default class Chart extends Component{
             labels:['Aprobaron', 'Reprobaron'],
             datasets:[{
                 data: [95,5],
-                backgroundColor:['#2BBF5D','#BF1A2F']
+                backgroundColor:['#8092CE','#4E597C'],
+                borderWidth: 0,
             }]
         }
     }
@@ -20,7 +21,7 @@ export default class Chart extends Component{
                     labels: this.state.labels,
                     datasets: this.state.datasets
                 }}
-                height='130px'
+                height='300px'
                 />
             </div>
         )

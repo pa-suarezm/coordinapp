@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../client/main.css";
 
-import PieChart from './PieChart';
+import PieChart from "./PieChart";
 
 const courseDetail = props => {
   const style = {
@@ -32,9 +32,16 @@ const courseDetail = props => {
         </div>
         <div id="data">3.82</div>
       </div>
-      <h3 id="aproved">Aprobación</h3>
-      <p>Porcentaje de estudiantes que aprobaron o no la nota final del curso</p>
-      <PieChart />
+      <div className="wrap-chart">
+        <div>
+          <h3 id="aproved">Aprobación</h3>
+          <p>
+            Porcentaje de estudiantes que aprobaron o no la nota final del
+            curso.
+          </p>
+        </div>
+        <PieChart />
+      </div>
     </div>
   );
 };
