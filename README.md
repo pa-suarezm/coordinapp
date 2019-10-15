@@ -12,9 +12,11 @@ Actualmente el análisis poblacional y su comportamiento para una y/o muchas gen
 
 <h4>Valor agregado:</h4>
 Estas soluciones no están pensadas para el contexto universitario donde el tamaño de la población tiende a no ser tan grande. Más aún, estas soluciones están limitadas a análisis poblacionales basados en geografía y regiones particulares; no permiten entender la población universitaria ni qué implica esa población para la universidad como organización.<br>
+
 <h4>Solución:</h4>
 Una aplicación para el análisis y proyección de estadísticas, a partir de información histórica, tales como estimado de nuevos estudiantes para el siguiente semestre, estimado de demanda de cursos y estadísticas del comportamiento poblacional (Ej. retiros, incompletos) en una población estudiantil universitaria, de tal manera que los estimados y/o gráficas sean un apoyo de toma de decisiones para los administrativos de la organización, específicamente para los coordinadores.<br>
-
+<h4>URL video de funcionalidad:<h4>
+  
 <h4>Clientes objetivos:</h4>
 Los coordinadores de las facultades de diferentes universidades en Bogotá.
 
