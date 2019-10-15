@@ -34,7 +34,7 @@ export default class Chart extends Component {
             labels: this.state.labels,
             datasets: this.state.datasets
           }}
-          height="100px"
+          height={100}
         />
       </div>
     );
